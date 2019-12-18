@@ -36,7 +36,6 @@ export class CommitsComponent implements OnInit, OnDestroy {
                 console.log(item.commit);
                 this.commits.push(new Commit(item.commit));
               });
-              //this.commits = this.commits.concat(commit);
           })
       }
 

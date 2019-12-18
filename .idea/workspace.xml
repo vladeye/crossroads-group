@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7412862-1d7c-4f72-b6a0-08942efdde0c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/api-mock.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/iserverobj.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/twitter-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/commit-data.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commit-data.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/commit-data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commit-data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/commit-list-header/commit-list-header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commit-list-header/commit-list-header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/commit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commit.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/commits/commits.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commits/commits.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/commit-list-footer/commit-list-footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commit-list-footer/commit-list-footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/commit-list-header/commit-list-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commit-list-header/commit-list-header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/commit-list-item/commit-list-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commit-list-item/commit-list-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/commit-list/commit-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commit-list/commit-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/commits/commits.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/commits/commits.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +103,7 @@
       <workItem from="1517291656222" duration="17067000" />
       <workItem from="1517314419866" duration="5100000" />
       <workItem from="1576632304899" duration="2571000" />
-      <workItem from="1576637699840" duration="16610000" />
+      <workItem from="1576637699840" duration="17515000" />
     </task>
     <servers />
   </component>
