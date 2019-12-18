@@ -16,7 +16,7 @@ export class CommitDataService {
    * Handles the errors from this class's functionality
    * @returns An error
    */
-  getCommitsFromServer(): Observable<Commit> {
+  getCommitsFromServer(): Observable {
     return this.api.getCommitsFromServer();
   }
 

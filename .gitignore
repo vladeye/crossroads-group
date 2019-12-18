@@ -1,0 +1,8 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+/vendor
+/app/logs
+# dependencies
+/node_modules
