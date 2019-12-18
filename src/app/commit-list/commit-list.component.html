@@ -1,0 +1,8 @@
+<section class="main" *ngIf="commits.length >= 5">
+  <ul class="commit-list">
+    <li *ngFor="let commit of commits" [class.completed]="commits.complete">
+      <app-commit-list-item
+        [commit]="commit"></app-commit-list-item>
+    </li>
+  </ul>
+</section>
