@@ -2,11 +2,17 @@
  * Commit: Class to hold commit's information
  */
 export class Commit {
-  id: number;
-  text: string;
-  username: string;
-  screen_name: string;
-  date: string;
-  profile_image_url: string;
+  author: Object;
+  commiter: Object;
+  message: string;
+  tree: Object;
+  url: string;
+  comment_count: number;
+  varification: string;
 
+
+  constructor(values: Object = {}) {
+    // noinspection TypeScriptValidateTypes
+    Object.assign(this, values);
+  }
 }

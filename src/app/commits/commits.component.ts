@@ -27,10 +27,16 @@ export class CommitsComponent implements OnInit, OnDestroy {
      */
       public ngOnInit() {
 
-          this.connection = this.commitDataService.getCommitsFromServer().subscribe(commit => {
+          this.connection = this.commitDataService.getCommitsFromServer().subscribe(data => {
               console.log('inside ngOnInit()');
-              console.log(commit);
-              this.commits = this.commits.concat(commit);
+            /**
+             * Assign every commit to an object creating an array of commits
+             */
+              data.forEach(item => {
+                console.log(item.commit);
+                this.commits.push(new Commit(item.commit));
+              });
+              //this.commits = this.commits.concat(commit);
           })
       }
 

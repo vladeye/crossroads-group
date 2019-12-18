@@ -8,11 +8,6 @@ import { Commit } from '../commit';
 })
 export class CommitListHeaderComponent {
 
-  newCommit: Commit = new Commit();
-
-  @Output()
-  add: EventEmitter<string> = new EventEmitter();
-
   constructor() {
   }
 

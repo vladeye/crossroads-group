@@ -1,15 +1,15 @@
 /* tslint:disable:no-unused-variable */
 
 import {TestBed, inject} from '@angular/core/testing';
-import {TwitterDataService} from './commit-data.service';
+import { CommitDataService } from './commit-data.service';
 import { ApiService } from './api.service';
-import { ApiMockService } from './api-mock.service';
+import { ApiMockService } from "./api-mock.service";
 
-describe('TwitterDataService', () => {
+describe('CommitDataService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [
-        TwitterDataService,
+        CommitDataService,
         {
           provide: ApiService,
           useClass: ApiMockService
@@ -18,7 +18,7 @@ describe('TwitterDataService', () => {
     });
   });
 
-  it('should ...', inject([TwitterDataService], (service: TwitterDataService) => {
+  it('should ...', inject([CommitDataService], (service: CommitDataService) => {
     expect(service).toBeTruthy();
   }));
 

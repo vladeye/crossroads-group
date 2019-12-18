@@ -8,7 +8,7 @@ import { ApiService } from '../api.service';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
-describe('TwitterComponent', () => {
+describe('CommitComponent', () => {
   let component: CommitsComponent;
   let fixture: ComponentFixture<CommitsComponent>;
 

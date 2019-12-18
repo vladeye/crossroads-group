@@ -4,8 +4,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Commit } from './commit';
 
 import {environment} from "../environments/environment";
-import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
+import {Observable, pipe, throwError} from 'rxjs';
+import {catchError, map} from 'rxjs/operators';
+import {IServerObj} from "./iserverobj";
+
 
 
 
@@ -35,10 +37,10 @@ export class ApiService {
    * Gets commits from github
    * @returns Array of commits
    */
-  public getCommitsFromServer(): Observable<Commit> {
-      return this.http.get<Commit>(this.apiURL + '/repos/vladeye/twitter-test-front/commits')
+  public getCommitsFromServer(): Observable<IServerObj[]> {
+      return this.http.get<IServerObj[]>(this.apiURL + '/repos/vladeye/crossroads-group/commits')
         .pipe(
-          retry(1),
+          map(res=> res),
           catchError(this.handleError)
       )
   }
