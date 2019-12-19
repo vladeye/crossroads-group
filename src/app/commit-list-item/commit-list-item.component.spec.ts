@@ -3,28 +3,23 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TweetListItemComponent } from './commit-list-item.component';
-import { Tweet } from '../commit';
+import { CommitListItemComponent } from './commit-list-item.component';
+import { Commit } from '../commit';
 
-describe('TweetListItemComponent', () => {
-  let component: TweetListItemComponent;
-  let fixture: ComponentFixture<TweetListItemComponent>;
+describe('CommitListItemComponent', () => {
+  let component: CommitListItemComponent;
+  let fixture: ComponentFixture<CommitListItemComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TweetListItemComponent ]
+      declarations: [ CommitListItemComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TweetListItemComponent);
+    fixture = TestBed.createComponent(CommitListItemComponent);
     component = fixture.componentInstance;
-    component.tweet = new Tweet({ id: 1, title: 'Test', complete: false });
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
   });
 });

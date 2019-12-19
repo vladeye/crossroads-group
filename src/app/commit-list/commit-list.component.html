@@ -1,6 +1,6 @@
 <section class="main" *ngIf="commits.length >= 1">
   <ul class="commit-list">
-    <li *ngFor="let commit of commits" [class.completed]="commits.complete">
+    <li *ngFor="let commit of commits" [class.completed]="false">
       <app-commit-list-item
         [commit]="commit"></app-commit-list-item>
     </li>

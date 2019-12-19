@@ -2,13 +2,13 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CommitsComponent} from './commits.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { ApiMockService } from '../api-mock.service';
 import { CommitDataService } from '../commit-data.service';
 import { ApiService } from '../api.service';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
-describe('CommitComponent', () => {
+describe('CommitsComponent', () => {
   let component: CommitsComponent;
   let fixture: ComponentFixture<CommitsComponent>;
 
@@ -16,11 +16,7 @@ describe('CommitComponent', () => {
     TestBed.configureTestingModule({
       declarations: [CommitsComponent],
       providers: [
-        CommitDataService,
-        {
-          provide: ApiService,
-          useClass: ApiMockService
-        },
+        ApiService,
         {
           provide: ActivatedRoute,
           useValue: {
@@ -29,6 +25,9 @@ describe('CommitComponent', () => {
             })
           }
         }
+      ],
+      imports: [
+        HttpClientTestingModule
       ],
       schemas: [
         NO_ERRORS_SCHEMA

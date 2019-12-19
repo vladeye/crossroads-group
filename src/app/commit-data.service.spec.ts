@@ -3,17 +3,17 @@
 import {TestBed, inject} from '@angular/core/testing';
 import { CommitDataService } from './commit-data.service';
 import { ApiService } from './api.service';
-import { ApiMockService } from "./api-mock.service";
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 describe('CommitDataService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [
         CommitDataService,
-        {
-          provide: ApiService,
-          useClass: ApiMockService
-        }
+        ApiService
+      ],
+      imports: [
+        HttpClientTestingModule
       ]
     });
   });

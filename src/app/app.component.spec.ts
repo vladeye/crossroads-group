@@ -5,23 +5,21 @@ import { AppComponent } from './app.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommitDataService } from './commit-data.service';
 import { ApiService } from './api.service';
-import { ApiMockService } from './api-mock.service';
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        FormsModule
+        FormsModule,
+        HttpClientTestingModule
       ],
       declarations: [
         AppComponent
       ],
       providers: [
         CommitDataService,
-        {
-          provide: ApiService,
-          useClass: ApiMockService
-        }
+        ApiService,
       ],
       schemas: [
         NO_ERRORS_SCHEMA
